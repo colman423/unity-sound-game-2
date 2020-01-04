@@ -27,7 +27,8 @@ public class CameraPath : MonoBehaviour
         index = 0;
         targetPoint = pathParent.GetChild(index);
         transform.position = targetPoint.position;
-        Player.SetActive(false);
+        // Player.SetActive(false);
+        // this.enabled = false;
     }
 
     // Update is called once per frame
