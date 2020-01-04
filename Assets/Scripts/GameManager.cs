@@ -5,7 +5,10 @@ public class GameManager : MonoBehaviour
 {
   public GameObject player;
   public GameObject UIPanel;
+
   public AudioSource audioSrc;
+  public AudioClip[] soundFiles;
+  private int soundFilesIndex = 0;
 
   private Move m_Move;
 
@@ -54,6 +57,7 @@ public class GameManager : MonoBehaviour
 
   private void endGoNextStage() {
     UIPanel.SetActive(true);
+    audioSrc.clip = soundFiles[(soundFilesIndex++)%2];
     audioSrc.enabled = true;
   }
 

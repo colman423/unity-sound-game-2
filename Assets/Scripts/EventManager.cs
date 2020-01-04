@@ -56,4 +56,8 @@ public enum EVENT
     GO_WRONG_PENALTY = 2,
     END_WRONG_PENALTY = 3,
     END_GO_NEXT_STAGE = 4,
+    GO_FINAL = 5,
+    FINAL_ROCK_DOWN = 6,
+    FINAL_TEMPLE_UP = 7,
+    FINAL_ANIMATION = 8,
 }
